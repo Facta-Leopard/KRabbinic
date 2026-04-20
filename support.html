@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KSaju Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fbf4ec;
+      --surface: #fffaf5;
+      --ink: #241611;
+      --muted: #70574c;
+      --accent: #a8552a;
+      --line: rgba(77, 42, 27, 0.18);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #160d09;
+        --surface: #23150f;
+        --ink: #fff4e5;
+        --muted: #d8bca5;
+        --accent: #f2a65e;
+        --line: rgba(255, 221, 179, 0.18);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, rgba(242, 166, 94, 0.2), transparent 34rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    article {
+      background: color-mix(in srgb, var(--surface) 92%, transparent);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: clamp(24px, 5vw, 52px);
+      box-shadow: 0 24px 70px rgba(57, 31, 18, 0.16);
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      letter-spacing: 0.02em;
+    }
+
+    h2 {
+      margin-top: 42px;
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      color: var(--accent);
+    }
+
+    h3 {
+      margin-top: 28px;
+      font-size: 1.1rem;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .summary {
+      max-width: 720px;
+      margin-top: 18px;
+      font-size: 1.08rem;
+    }
+
+    .divider {
+      height: 1px;
+      margin: 42px 0;
+      background: var(--line);
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <p class="eyebrow">Last updated: April 20, 2026</p>
+      <h1>KSaju Support</h1>
+      <p class="summary">
+        Use this page for KSaju support, bug reports, feature requests, and app-scope questions.
+      </p>
+
+      <h2>English</h2>
+
+      <h3>Before You Report an Issue</h3>
+      <p>Please check the following:</p>
+      <ul>
+        <li>KSaju requires iOS 26 or later.</li>
+        <li>Saju Reading is implemented in the initial release.</li>
+        <li>Today's Fortune, Compatibility, and Twelve Animal Signs are reserved for future updates.</li>
+        <li>Apple Intelligence interpretation may fall back to the built-in on-device reading when Apple Intelligence is unavailable, disabled, not ready, or unsupported for the selected language.</li>
+      </ul>
+
+      <h3>What to Include</h3>
+      <p>When reporting an issue, include:</p>
+      <ul>
+        <li>Device model.</li>
+        <li>iOS version.</li>
+        <li>KSaju app version.</li>
+        <li>App language setting.</li>
+        <li>Birth profile input pattern, if relevant. Do not share sensitive personal birth data unless you intentionally choose to.</li>
+        <li>Steps to reproduce the issue.</li>
+        <li>Screenshots, if they help explain the problem.</li>
+      </ul>
+
+      <h3>Privacy and Sensitive Data</h3>
+      <p>
+        Do not post private personal information in a public GitHub issue. If a birth profile is needed to reproduce
+        a calculation issue, you may use an approximate or fictional test profile unless exact details are necessary.
+      </p>
+
+      <h3>App Scope</h3>
+      <p>
+        KSaju readings are for self-reflection and entertainment. KSaju does not provide professional health, legal,
+        financial, medical, immigration, employment, or safety advice.
+      </p>
+
+      <h3>Where to Request Help</h3>
+      <p>Open a GitHub issue in the KSaju project repository and choose the most relevant label, such as bug, question, or feature request.</p>
+
+      <div class="divider"></div>
+
+      <h2>한국어</h2>
+
+      <h3>문의 전 확인 사항</h3>
+      <p>먼저 다음 사항을 확인해 주세요.</p>
+      <ul>
+        <li>KSaju는 iOS 26 이상에서 사용할 수 있습니다.</li>
+        <li>초기 버전에서는 사주풀이 기능이 구현되어 있습니다.</li>
+        <li>오늘의 운세, 궁합, 십이간지는 향후 업데이트 예정 기능입니다.</li>
+        <li>Apple Intelligence 해설은 Apple Intelligence를 사용할 수 없거나, 꺼져 있거나, 아직 준비되지 않았거나, 선택 언어를 지원하지 않는 경우 기기 내장 해설로 대체될 수 있습니다.</li>
+      </ul>
+
+      <h3>제보 시 포함할 내용</h3>
+      <p>문제를 제보할 때는 다음 정보를 포함해 주세요.</p>
+      <ul>
+        <li>기기 모델</li>
+        <li>iOS 버전</li>
+        <li>KSaju 앱 버전</li>
+        <li>앱 언어 설정</li>
+        <li>관련이 있는 경우 출생 프로필 입력 패턴. 민감한 실제 생년월일 정보는 사용자가 명시적으로 원하지 않는 한 공개하지 마세요.</li>
+        <li>문제 재현 단계</li>
+        <li>문제 설명에 도움이 되는 스크린샷</li>
+      </ul>
+
+      <h3>개인정보와 민감 정보</h3>
+      <p>
+        공개 GitHub 이슈에는 민감한 개인정보를 올리지 마세요. 계산 문제 재현에 출생 프로필이 필요한 경우,
+        정확한 정보가 꼭 필요한 상황이 아니라면 근사값이나 가상의 테스트 프로필을 사용할 수 있습니다.
+      </p>
+
+      <h3>앱 제공 범위</h3>
+      <p>
+        KSaju의 사주 해설은 자기이해와 엔터테인먼트 목적의 참고 정보입니다. KSaju는 건강, 법률, 금융, 의료,
+        이민, 고용, 안전 관련 전문 조언을 제공하지 않습니다.
+      </p>
+
+      <h3>지원 요청 위치</h3>
+      <p>KSaju 프로젝트 GitHub 저장소에서 이슈를 열고, bug, question, feature request 등 가장 알맞은 라벨을 선택해 주세요.</p>
+    </article>
+  </main>
+</body>
+</html>
