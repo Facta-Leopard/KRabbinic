@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KSaju Support</title>
+  <title>KRabbinic Support</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -26,9 +26,7 @@
       }
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -37,13 +35,13 @@
         var(--bg);
       color: var(--ink);
       font-family: ui-serif, Georgia, "Times New Roman", serif;
-      line-height: 1.65;
+      line-height: 1.68;
     }
 
     main {
-      width: min(920px, calc(100% - 32px));
+      width: min(940px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 48px 0;
+      padding: 48px 0 72px;
     }
 
     article {
@@ -54,12 +52,7 @@
       box-shadow: 0 24px 70px rgba(57, 31, 18, 0.16);
     }
 
-    h1,
-    h2,
-    h3 {
-      line-height: 1.2;
-      margin: 0;
-    }
+    h1, h2, h3 { line-height: 1.2; margin: 0; }
 
     h1 {
       font-size: clamp(2rem, 6vw, 4rem);
@@ -73,19 +66,16 @@
     }
 
     h3 {
-      margin-top: 28px;
-      font-size: 1.1rem;
+      margin-top: 26px;
+      font-size: 1.08rem;
     }
 
-    p,
-    li {
+    p, li {
       color: var(--muted);
       font-size: 1rem;
     }
 
-    ul {
-      padding-left: 1.2rem;
-    }
+    ul { padding-left: 1.2rem; }
 
     .eyebrow {
       margin: 0 0 10px;
@@ -98,7 +88,7 @@
     }
 
     .summary {
-      max-width: 720px;
+      max-width: 760px;
       margin-top: 18px;
       font-size: 1.08rem;
     }
@@ -109,232 +99,308 @@
       background: var(--line);
     }
 
-    a {
-      color: var(--accent);
+    a { color: var(--accent); }
+
+    .callout {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: color-mix(in srgb, var(--surface) 86%, transparent);
     }
   </style>
 </head>
 <body>
   <main>
     <article>
-      <p class="eyebrow">Last updated: April 21, 2026</p>
-      <h1>KSaju Support</h1>
+      <p class="eyebrow">Last updated: April 24, 2026</p>
+      <h1>KRabbinic Support</h1>
       <p class="summary">
-        Use this page for KSaju support, bug reports, feature requests, and app-scope questions.
+        Use this page for KRabbinic bug reports, feature requests, support questions, privacy-choice issues,
+        and troubleshooting for Myeongli Learning, Twelve Animal Signs study, Chart Practice, Daily Myeongli Analysis,
+        AI Tutor, settings, and banner ads.
       </p>
+
+      <div class="callout">
+        <p>
+          Repository:
+          <a href="https://github.com/Facta-Leopard/KRabbinic">github.com/Facta-Leopard/KRabbinic</a><br>
+          Issue tracker:
+          <a href="https://github.com/Facta-Leopard/KRabbinic/issues">github.com/Facta-Leopard/KRabbinic/issues</a><br>
+          Contact:
+          <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a>
+        </p>
+      </div>
 
       <h2>English</h2>
 
-      <h3>Before You Report an Issue</h3>
-      <p>Please check the following:</p>
+      <h3>1. Before You Contact Support</h3>
       <ul>
-        <li>KSaju requires iOS 26 or later.</li>
-        <li>Saju Reading is implemented in the initial release.</li>
-        <li>Apple Intelligence interpretation may fall back to the built-in on-device reading when Apple Intelligence is unavailable, disabled, not ready, or unsupported for the selected language.</li>
+        <li>KRabbinic currently targets iPhone first and requires iOS 26 or later.</li>
+        <li>The app currently includes Myeongli Learning, Twelve Animal Signs study, Chart Practice, Daily Myeongli Analysis, AI Tutor, settings, and banner ads.</li>
+        <li>Apple Intelligence responses may fall back to the built-in learning flow if Apple Intelligence is unavailable, disabled, not ready, or unsupported for the selected language.</li>
+        <li>Banner ads may depend on consent status, ATT permission, region, and AdMob readiness.</li>
       </ul>
 
-      <h3>What to Include</h3>
-      <p>When reporting an issue, include:</p>
+      <h3>2. What to Include in a Bug Report</h3>
       <ul>
-        <li>Device model.</li>
-        <li>iOS version.</li>
-        <li>KSaju app version.</li>
-        <li>App language setting.</li>
-        <li>Birth profile input pattern, if relevant. Do not share sensitive personal birth data unless you intentionally choose to.</li>
-        <li>Steps to reproduce the issue.</li>
-        <li>Screenshots, if they help explain the problem.</li>
+        <li>Device model and iOS version.</li>
+        <li>KRabbinic app version.</li>
+        <li>App language.</li>
+        <li>Whether the issue appears in Myeongli Learning, Twelve Animal Signs study, Chart Practice, Daily Myeongli Analysis, AI Tutor, settings, or ads.</li>
+        <li>Steps to reproduce the problem.</li>
+        <li>Screenshots or screen recordings if helpful.</li>
       </ul>
 
-      <h3>Privacy and Sensitive Data</h3>
-      <p>
-        Do not post private personal information in a public GitHub issue. If a birth profile is needed to reproduce
-        a calculation issue, you may use an approximate or fictional test profile unless exact details are necessary.
-      </p>
-
-      <h3>App Scope</h3>
-      <p>
-        KSaju readings are for self-reflection and entertainment. KSaju does not provide professional health, legal,
-        financial, medical, immigration, employment, or safety advice.
-      </p>
-
-      <h3>Where to Request Help</h3>
-      <p>
-        Open a GitHub issue in the
-        <a href="https://github.com/facta-leopard/KSAJU/issues">KSaju project repository</a>
-        and choose the most relevant label, such as bug, question, or feature request.
-      </p>
-
-      <div class="divider"></div>
-
-      <h2>Español</h2>
-
-      <h3>Antes de informar un problema</h3>
-      <p>Comprueba lo siguiente:</p>
+      <h3>3. If the Issue Is About Chart Calculation</h3>
       <ul>
-        <li>KSaju requiere iOS 26 o posterior.</li>
-        <li>La lectura Saju está implementada en la versión inicial.</li>
-        <li>La interpretación con Apple Intelligence puede usar la lectura integrada en el dispositivo cuando Apple Intelligence no esté disponible, esté desactivado, no esté listo o no sea compatible con el idioma seleccionado.</li>
+        <li>Calendar type used.</li>
+        <li>Timezone selected.</li>
+        <li>Whether daylight saving correction was enabled.</li>
+        <li>Whether birth time was known or estimated.</li>
+        <li>You may replace real birth data with a fictional test profile unless exact data is required.</li>
       </ul>
 
-      <h3>Qué incluir</h3>
-      <p>Al informar un problema, incluye:</p>
+      <h3>4. If the Issue Is About Ads or Privacy Choices</h3>
       <ul>
-        <li>Modelo del dispositivo.</li>
-        <li>Versión de iOS.</li>
-        <li>Versión de la app KSaju.</li>
-        <li>Idioma configurado en la app.</li>
-        <li>Patrón de entrada del perfil de nacimiento, si es relevante. No compartas datos personales sensibles de nacimiento salvo que decidas hacerlo intencionalmente.</li>
-        <li>Pasos para reproducir el problema.</li>
-        <li>Capturas de pantalla, si ayudan a explicar el problema.</li>
+        <li>Your region or App Store country if relevant.</li>
+        <li>Whether the ATT prompt appeared.</li>
+        <li>Whether the privacy-choice form appeared.</li>
+        <li>Whether the app showed a placeholder banner or a loaded ad.</li>
       </ul>
 
-      <h3>Privacidad y datos sensibles</h3>
+      <h3>5. Sensitive Data</h3>
       <p>
-        No publiques información personal privada en un issue público de GitHub. Si se necesita un perfil de nacimiento
-        para reproducir un problema de cálculo, puedes usar un perfil aproximado o ficticio salvo que los datos exactos sean necesarios.
+        Do not post private personal information in a public GitHub issue. If an exact birth profile is not required,
+        use a partial, approximate, or fictional example.
       </p>
 
-      <h3>Alcance de la app</h3>
+      <h3>6. Scope</h3>
       <p>
-        Las lecturas de KSaju son para reflexión personal y entretenimiento. KSaju no proporciona asesoramiento profesional
-        de salud, legal, financiero, médico, migratorio, laboral o de seguridad.
+        KRabbinic is a learning and interpretation-support app for Korean Myeongli. It does not provide professional
+        health, legal, financial, medical, immigration, employment, or safety advice.
       </p>
 
-      <h3>Dónde solicitar ayuda</h3>
+      <h3>7. Where to Ask for Help</h3>
       <p>
-        Abre un issue de GitHub en el
-        <a href="https://github.com/facta-leopard/KSAJU/issues">repositorio del proyecto KSaju</a>
-        y elige la etiqueta más adecuada, como bug, question o feature request.
-      </p>
-
-      <div class="divider"></div>
-
-      <h2>Français</h2>
-
-      <h3>Avant de signaler un problème</h3>
-      <p>Veuillez vérifier les points suivants :</p>
-      <ul>
-        <li>KSaju nécessite iOS 26 ou une version ultérieure.</li>
-        <li>La lecture Saju est implémentée dans la version initiale.</li>
-        <li>L'interprétation avec Apple Intelligence peut revenir à la lecture intégrée sur l'appareil lorsque Apple Intelligence est indisponible, désactivée, non prête ou non prise en charge pour la langue sélectionnée.</li>
-      </ul>
-
-      <h3>Informations à inclure</h3>
-      <p>Lorsque vous signalez un problème, incluez :</p>
-      <ul>
-        <li>Le modèle de l'appareil.</li>
-        <li>La version d'iOS.</li>
-        <li>La version de l'app KSaju.</li>
-        <li>Le réglage de langue de l'app.</li>
-        <li>Le schéma de saisie du profil de naissance, si pertinent. Ne partagez pas de données personnelles sensibles de naissance sauf si vous choisissez volontairement de le faire.</li>
-        <li>Les étapes pour reproduire le problème.</li>
-        <li>Des captures d'écran, si elles aident à expliquer le problème.</li>
-      </ul>
-
-      <h3>Confidentialité et données sensibles</h3>
-      <p>
-        Ne publiez pas d'informations personnelles privées dans une issue GitHub publique. Si un profil de naissance est
-        nécessaire pour reproduire un problème de calcul, vous pouvez utiliser un profil approximatif ou fictif sauf si
-        les détails exacts sont nécessaires.
-      </p>
-
-      <h3>Périmètre de l'app</h3>
-      <p>
-        Les lectures de KSaju sont destinées à la réflexion personnelle et au divertissement. KSaju ne fournit pas de
-        conseil professionnel en matière de santé, de droit, de finances, de médecine, d'immigration, d'emploi ou de sécurité.
-      </p>
-
-      <h3>Où demander de l'aide</h3>
-      <p>
-        Ouvrez une issue GitHub dans le
-        <a href="https://github.com/facta-leopard/KSAJU/issues">dépôt du projet KSaju</a>
-        et choisissez l'étiquette la plus pertinente, comme bug, question ou feature request.
-      </p>
-
-      <div class="divider"></div>
-
-      <h2>Deutsch</h2>
-
-      <h3>Bevor du ein Problem meldest</h3>
-      <p>Bitte prüfe zuerst Folgendes:</p>
-      <ul>
-        <li>KSaju erfordert iOS 26 oder neuer.</li>
-        <li>Die Saju-Lesung ist in der ersten Version implementiert.</li>
-        <li>Die Interpretation mit Apple Intelligence kann auf die integrierte Lesung auf dem Gerät zurückfallen, wenn Apple Intelligence nicht verfügbar, deaktiviert, noch nicht bereit oder für die ausgewählte Sprache nicht unterstützt ist.</li>
-      </ul>
-
-      <h3>Was du angeben solltest</h3>
-      <p>Wenn du ein Problem meldest, füge bitte Folgendes hinzu:</p>
-      <ul>
-        <li>Gerätemodell.</li>
-        <li>iOS-Version.</li>
-        <li>KSaju-App-Version.</li>
-        <li>Spracheinstellung der App.</li>
-        <li>Eingabemuster des Geburtsprofils, falls relevant. Teile keine sensiblen persönlichen Geburtsdaten, es sei denn, du entscheidest dich bewusst dafür.</li>
-        <li>Schritte zur Reproduktion des Problems.</li>
-        <li>Screenshots, wenn sie das Problem erklären helfen.</li>
-      </ul>
-
-      <h3>Datenschutz und sensible Daten</h3>
-      <p>
-        Veröffentliche keine privaten personenbezogenen Informationen in einem öffentlichen GitHub-Issue. Wenn ein
-        Geburtsprofil zur Reproduktion eines Berechnungsproblems benötigt wird, kannst du ein ungefähres oder fiktives
-        Testprofil verwenden, sofern exakte Angaben nicht erforderlich sind.
-      </p>
-
-      <h3>App-Umfang</h3>
-      <p>
-        KSaju-Lesungen dienen der Selbstreflexion und Unterhaltung. KSaju bietet keine professionelle Beratung zu
-        Gesundheit, Recht, Finanzen, Medizin, Einwanderung, Beruf oder Sicherheit.
-      </p>
-
-      <h3>Wo du Hilfe anfordern kannst</h3>
-      <p>
-        Öffne ein GitHub-Issue im
-        <a href="https://github.com/facta-leopard/KSAJU/issues">KSaju-Projektrepository</a>
-        und wähle das passende Label, zum Beispiel bug, question oder feature request.
+        For bugs and feature requests, use the
+        <a href="https://github.com/Facta-Leopard/KRabbinic/issues">GitHub issue tracker</a>.
+        For privacy, sponsorship, or direct support questions, email
+        <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a>.
       </p>
 
       <div class="divider"></div>
 
       <h2>한국어</h2>
 
-      <h3>문의 전 확인 사항</h3>
-      <p>먼저 다음 사항을 확인해 주세요.</p>
+      <h3>1. 문의 전에 먼저 확인해 주세요</h3>
       <ul>
-        <li>KSaju는 iOS 26 이상에서 사용할 수 있습니다.</li>
-        <li>초기 버전에서는 사주풀이 기능이 구현되어 있습니다.</li>
-        <li>Apple Intelligence 해설은 Apple Intelligence를 사용할 수 없거나, 꺼져 있거나, 아직 준비되지 않았거나, 선택 언어를 지원하지 않는 경우 기기 내장 해설로 대체될 수 있습니다.</li>
+        <li>KRabbinic는 현재 아이폰 우선 기준이며 iOS 26 이상이 필요합니다.</li>
+        <li>앱에는 명리 학습, 십이간지 학습, 원국 실습, 일일 명리 분석, AI 튜터, 설정, 배너 광고 기능이 포함됩니다.</li>
+        <li>Apple Intelligence를 사용할 수 없거나 꺼져 있거나 준비되지 않았거나 선택 언어를 지원하지 않으면 앱 내장 학습 흐름으로 대체될 수 있습니다.</li>
+        <li>배너 광고는 동의 상태, ATT 권한, 지역, AdMob 준비 상태에 따라 다르게 보일 수 있습니다.</li>
       </ul>
 
-      <h3>제보 시 포함할 내용</h3>
-      <p>문제를 제보할 때는 다음 정보를 포함해 주세요.</p>
+      <h3>2. 버그 제보에 포함하면 좋은 정보</h3>
       <ul>
-        <li>기기 모델</li>
-        <li>iOS 버전</li>
-        <li>KSaju 앱 버전</li>
+        <li>기기 모델과 iOS 버전</li>
+        <li>KRabbinic 앱 버전</li>
         <li>앱 언어 설정</li>
-        <li>관련이 있는 경우 출생 프로필 입력 패턴. 민감한 실제 생년월일 정보는 사용자가 명시적으로 원하지 않는 한 공개하지 마세요.</li>
-        <li>문제 재현 단계</li>
-        <li>문제 설명에 도움이 되는 스크린샷</li>
+        <li>문제가 발생한 위치: 명리 학습, 십이간지, 원국 실습, 일일 명리 분석, AI 튜터, 설정, 광고 등</li>
+        <li>재현 단계</li>
+        <li>가능하면 스크린샷 또는 화면 녹화</li>
       </ul>
 
-      <h3>개인정보와 민감 정보</h3>
+      <h3>3. 원국 계산 문제라면 함께 적어 주세요</h3>
+      <ul>
+        <li>사용한 달력 기준</li>
+        <li>선택한 시간대</li>
+        <li>서머타임 보정 사용 여부</li>
+        <li>출생 시각이 정확한지 또는 추정치인지</li>
+        <li>정확한 실데이터가 꼭 필요하지 않다면 가상 테스트 프로필을 사용해도 됩니다.</li>
+      </ul>
+
+      <h3>4. 광고 또는 개인정보 선택 문제라면 함께 적어 주세요</h3>
+      <ul>
+        <li>필요하다면 사용 지역 또는 App Store 국가</li>
+        <li>ATT 권한 팝업이 떴는지</li>
+        <li>개인정보 선택 폼이 떴는지</li>
+        <li>실제 광고가 보였는지, 자리 표시 배너만 보였는지</li>
+      </ul>
+
+      <h3>5. 민감 정보</h3>
       <p>
-        공개 GitHub 이슈에는 민감한 개인정보를 올리지 마세요. 계산 문제 재현에 출생 프로필이 필요한 경우,
-        정확한 정보가 꼭 필요한 상황이 아니라면 근사값이나 가상의 테스트 프로필을 사용할 수 있습니다.
+        공개 GitHub 이슈에는 민감한 개인정보를 올리지 마세요. 정확한 출생 프로필이 꼭 필요하지 않다면 부분값, 근사값,
+        또는 가상 예시를 사용해 주세요.
       </p>
 
-      <h3>앱 제공 범위</h3>
+      <h3>6. 앱 제공 범위</h3>
       <p>
-        KSaju의 사주 해설은 자기이해와 엔터테인먼트 목적의 참고 정보입니다. KSaju는 건강, 법률, 금융, 의료,
-        이민, 고용, 안전 관련 전문 조언을 제공하지 않습니다.
+        KRabbinic는 한국 명리 학습과 해설 보조를 위한 앱입니다. 건강, 법률, 금융, 의료, 이민, 고용, 안전에 관한
+        전문 조언을 제공하지 않습니다.
       </p>
 
-      <h3>지원 요청 위치</h3>
+      <h3>7. 어디로 문의하면 되나요</h3>
       <p>
-        <a href="https://github.com/facta-leopard/KSAJU/issues">KSaju 프로젝트 GitHub 저장소</a>에서 이슈를 열고,
-        bug, question, feature request 등 가장 알맞은 라벨을 선택해 주세요.
+        버그와 기능 요청은
+        <a href="https://github.com/Facta-Leopard/KRabbinic/issues">GitHub 이슈 트래커</a>를 사용해 주세요.
+        개인정보, 후원, 직접 문의는 <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a>으로 연락하면 됩니다.
+      </p>
+
+      <div class="divider"></div>
+
+      <h2>Español</h2>
+
+      <h3>1. Antes de contactar soporte</h3>
+      <ul>
+        <li>KRabbinic está orientada primero a iPhone y requiere iOS 26 o posterior.</li>
+        <li>La app incluye aprendizaje de Myeongli, estudio de los Doce Signos Animales, práctica de carta, análisis diario de Myeongli, tutor de IA, ajustes y banners publicitarios.</li>
+        <li>Las respuestas de Apple Intelligence pueden volver al flujo integrado si Apple Intelligence no está disponible o no admite el idioma seleccionado.</li>
+        <li>Los anuncios pueden depender del consentimiento, del permiso ATT, de la región y del estado de AdMob.</li>
+      </ul>
+
+      <h3>2. Qué incluir en un reporte</h3>
+      <ul>
+        <li>Modelo del dispositivo y versión de iOS.</li>
+        <li>Versión de la app KRabbinic.</li>
+        <li>Idioma de la app.</li>
+        <li>Área afectada: aprendizaje de Myeongli, Doce Signos Animales, práctica de carta, análisis diario de Myeongli, tutor de IA, ajustes o anuncios.</li>
+        <li>Pasos para reproducir el problema.</li>
+        <li>Capturas o grabación de pantalla si ayudan.</li>
+      </ul>
+
+      <h3>3. Si el problema es de cálculo</h3>
+      <ul>
+        <li>Tipo de calendario usado.</li>
+        <li>Zona horaria seleccionada.</li>
+        <li>Si la corrección de horario de verano estaba activada.</li>
+        <li>Si la hora de nacimiento era exacta o estimada.</li>
+        <li>Puedes usar un perfil ficticio si no hace falta la información real exacta.</li>
+      </ul>
+
+      <h3>4. Si el problema es sobre anuncios o privacidad</h3>
+      <ul>
+        <li>Región o país de App Store si es relevante.</li>
+        <li>Si apareció la solicitud ATT.</li>
+        <li>Si apareció el formulario de opciones de privacidad.</li>
+        <li>Si viste un banner real o solo el marcador de posición.</li>
+      </ul>
+
+      <h3>5. Datos sensibles</h3>
+      <p>No publiques información privada en issues públicos. Usa ejemplos parciales o ficticios cuando sea posible.</p>
+
+      <h3>6. Alcance</h3>
+      <p>KRabbinic es una app para aprendizaje e interpretación guiada del Myeongli coreano. No ofrece asesoramiento profesional.</p>
+
+      <h3>7. Dónde pedir ayuda</h3>
+      <p>
+        Para bugs y funciones usa el
+        <a href="https://github.com/Facta-Leopard/KRabbinic/issues">rastreador de issues</a>.
+        Para privacidad o contacto directo escribe a <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a>.
+      </p>
+
+      <div class="divider"></div>
+
+      <h2>Français</h2>
+
+      <h3>1. Avant de contacter le support</h3>
+      <ul>
+        <li>KRabbinic cible d'abord l'iPhone et nécessite iOS 26 ou version ultérieure.</li>
+        <li>L'app inclut apprentissage du Myeongli, étude des Douze Signes Animaux, pratique du thème, analyse Myeongli quotidienne, tuteur IA, réglages et bannières publicitaires.</li>
+        <li>Les réponses Apple Intelligence peuvent revenir au flux intégré si Apple Intelligence n'est pas disponible ou ne prend pas en charge la langue choisie.</li>
+        <li>Les annonces peuvent dépendre du consentement, de l'autorisation ATT, de la région et de l'état d'AdMob.</li>
+      </ul>
+
+      <h3>2. Éléments à inclure dans un signalement</h3>
+      <ul>
+        <li>Modèle d'appareil et version iOS.</li>
+        <li>Version de l'app KRabbinic.</li>
+        <li>Langue de l'app.</li>
+        <li>Zone concernée : apprentissage du Myeongli, Douze Signes Animaux, pratique du thème, analyse Myeongli quotidienne, tuteur IA, réglages ou publicités.</li>
+        <li>Étapes de reproduction.</li>
+        <li>Captures ou enregistrement écran si utile.</li>
+      </ul>
+
+      <h3>3. Si le problème concerne le calcul</h3>
+      <ul>
+        <li>Type de calendrier utilisé.</li>
+        <li>Fuseau horaire choisi.</li>
+        <li>Correction d'heure d'été activée ou non.</li>
+        <li>Heure de naissance exacte ou estimée.</li>
+        <li>Un profil fictif peut être utilisé si les données exactes ne sont pas indispensables.</li>
+      </ul>
+
+      <h3>4. Si le problème concerne la publicité ou la confidentialité</h3>
+      <ul>
+        <li>Région ou pays App Store si pertinent.</li>
+        <li>Si la demande ATT est apparue.</li>
+        <li>Si le formulaire de choix de confidentialité est apparu.</li>
+        <li>Si une vraie bannière s'est affichée ou seulement un emplacement temporaire.</li>
+      </ul>
+
+      <h3>5. Données sensibles</h3>
+      <p>Ne publiez pas de données privées dans des issues publiques. Utilisez si possible des exemples partiels ou fictifs.</p>
+
+      <h3>6. Périmètre</h3>
+      <p>KRabbinic est une app d'apprentissage et d'accompagnement interprétatif du Myeongli coréen. Elle ne fournit pas de conseil professionnel.</p>
+
+      <h3>7. Où demander de l'aide</h3>
+      <p>
+        Pour les bugs et demandes de fonctions, utilisez le
+        <a href="https://github.com/Facta-Leopard/KRabbinic/issues">suivi GitHub</a>.
+        Pour la confidentialité ou un contact direct, écrivez à <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a>.
+      </p>
+
+      <div class="divider"></div>
+
+      <h2>Deutsch</h2>
+
+      <h3>1. Vor einer Supportanfrage</h3>
+      <ul>
+        <li>KRabbinic ist derzeit zuerst auf iPhone ausgerichtet und benötigt iOS 26 oder neuer.</li>
+        <li>Die App enthält Myeongli-Lernen, Zwölf Tierzeichen, Chart-Übung, tägliche Myeongli-Analyse, KI-Tutor, Einstellungen und Bannerwerbung.</li>
+        <li>Apple-Intelligence-Antworten können auf den integrierten Ablauf zurückfallen, wenn Apple Intelligence nicht verfügbar ist.</li>
+        <li>Anzeigen können von Einwilligung, ATT-Erlaubnis, Region und AdMob-Status abhängen.</li>
+      </ul>
+
+      <h3>2. Was in einen Fehlerbericht gehört</h3>
+      <ul>
+        <li>Gerätemodell und iOS-Version.</li>
+        <li>KRabbinic-App-Version.</li>
+        <li>App-Sprache.</li>
+        <li>Betroffener Bereich: Myeongli-Lernen, Zwölf Tierzeichen, Chart-Übung, tägliche Myeongli-Analyse, KI-Tutor, Einstellungen oder Werbung.</li>
+        <li>Schritte zur Reproduktion.</li>
+        <li>Screenshots oder Bildschirmaufnahmen, falls hilfreich.</li>
+      </ul>
+
+      <h3>3. Wenn es um Berechnung geht</h3>
+      <ul>
+        <li>Verwendeter Kalendertyp.</li>
+        <li>Gewählte Zeitzone.</li>
+        <li>Ob Sommerzeitkorrektur aktiv war.</li>
+        <li>Ob die Geburtszeit exakt oder geschätzt war.</li>
+        <li>Wenn möglich, nutze statt echter Daten ein fiktives Testprofil.</li>
+      </ul>
+
+      <h3>4. Wenn es um Werbung oder Datenschutz geht</h3>
+      <ul>
+        <li>Region oder App-Store-Land, falls relevant.</li>
+        <li>Ob die ATT-Abfrage erschienen ist.</li>
+        <li>Ob das Datenschutz-Auswahlformular erschienen ist.</li>
+        <li>Ob eine echte Anzeige oder nur ein Platzhalter sichtbar war.</li>
+      </ul>
+
+      <h3>5. Sensible Daten</h3>
+      <p>Bitte keine privaten personenbezogenen Daten in öffentlichen Issues posten. Wenn möglich, nutze Teilwerte oder fiktive Beispiele.</p>
+
+      <h3>6. Umfang der App</h3>
+      <p>KRabbinic ist eine Lern- und Interpretationshilfe für koreanisches Myeongli. Die App bietet keine professionelle Beratung.</p>
+
+      <h3>7. Wo du Hilfe bekommst</h3>
+      <p>
+        Für Bugs und Funktionswünsche nutze den
+        <a href="https://github.com/Facta-Leopard/KRabbinic/issues">GitHub-Issue-Tracker</a>.
+        Für Datenschutz oder direkte Anfragen schreibe an <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a>.
       </p>
     </article>
   </main>
